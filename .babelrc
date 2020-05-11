@@ -1,0 +1,16 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false
+            }
+            
+        ]
+    ],
+    "plugins": [
+        "@babel/syntax-jsx",
+        "@babel/plugin-transform-object-assign",
+        "dynamic-import-webpack"
+    ]
+}

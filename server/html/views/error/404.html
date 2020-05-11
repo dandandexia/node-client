@@ -1,0 +1,47 @@
+{% extends '../layout.html' %}
+{% block head %}
+<style>
+        body {
+            background: #f1f1f1;
+        }
+        .error_container {
+            width: 1166px;
+            height: 648px;
+            margin: 60px auto 128px;
+            background: #fff;
+            padding-top: 70px;
+            padding-bottom: 80px;
+            box-sizing: border-box;
+        }
+        .error_container p {
+            text-align: center;
+            color: #13334D;
+            font-size: 32px;
+            margin-bottom: 52px;
+        }
+        .error_container img {
+            width: 862px;
+            height: 288px;
+            display: block;
+            margin: auto;
+        }
+        .error_container a {
+            display: block;
+            width: 234px;
+            height: 56px;
+            line-height: 56px;
+            font-size: 18px;
+            text-align: center;
+            margin: auto;
+            margin-top: 54px;
+            background: #5ABCE9;
+            color: #fff;
+            border-radius: 100px;
+        }
+</style>
+{% endblock %}
+{% block content %}
+<div id="error_404" class="error_container">
+    <p>Oops~ 页面飞走了</p>
+</div>
+{% endblock %}

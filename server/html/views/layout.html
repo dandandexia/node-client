@@ -1,0 +1,31 @@
+{% set img_host = '//cdn.toweringsecurities.cn' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{HtmlConfig.title}}</title>
+    <meta name="keywords" content="{{HtmlConfig.keywords}}" />
+    <meta name="description" content="{{HtmlConfig.desc}}" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <link rel="dns-prefetch" href="//***.com">
+    <link rel="stylesheet" type="text/css" href="{{'/css/pc/common/base.css'|md5_url}}">
+    {% block head %}{% endblock %}
+    <script>
+        window.CONFIG = {
+            img_host: 'https://cdn.toweringsecurities.cn'
+        }
+    </script>
+</head>
+<body>
+    <div class="page_container test">
+        {% if !hide_header %}
+            {% include './header.html' %}
+        {% endif %}
+        {% block content %}{% endblock %}
+        {% include './footer.html' %}
+    </div>
+</body>
+</html>

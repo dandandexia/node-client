@@ -1,0 +1,37 @@
+{% set img_host = '//cdn.toweringsecurities.cn' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{HtmlConfig.title}}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="{{'/css/wap/common/base.css'|md5_url}}">
+    <script>
+        (function(){var h=window,m=document;var c=m.documentElement,a=h.navigator.userAgent,k=c.querySelector('meta[name="viewport"]'),n=0,d=0,o=100,f={},e;if(!n&&!d){var j=a.match(/android/gi),i=a.match(/iphone/gi),l=h.devicePixelRatio;
+        if(i){if(l>=3&&(!n||n>=3)){n=3;}else{if(l>=2&&(!n||n>=2)){n=2;}else{n=1;}}}else{n=1;}d=1/n;}c.setAttribute("data-dpr",n);if(k){var g=k.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+        if(g){d=parseFloat(g[1]);n=parseInt(1/d);}}if(!k){k=m.createElement("meta");k.setAttribute("name","viewport");k.setAttribute("content","initial-scale="+d+", maximum-scale="+d+", minimum-scale="+d+", user-scalable=no");
+        if(c.firstElementChild){c.firstElementChild.appendChild(k);}else{var b=m.createElement("div");b.appendChild(k);m.write(b.innerHTML);}}refreshRem=function(){var p=c.clientWidth>540?540:c.clientWidth;
+        if(!p){return;}f.fontSize=100*(p/375);var z=f.fontSize;c.style.fontSize=z+"px";};h.addEventListener("resize",function(){clearTimeout(e);e=setTimeout(refreshRem,300);
+        },false);h.addEventListener("pageshow",function(p){if(p.persisted){clearTimeout(e);e=setTimeout(refreshRem,300);}},false);refreshRem();h.TY=h.TY||{};
+        TY.Flexible=f;})();
+    </script>
+    {% block head %}{% endblock %}
+    <script>
+        window.CONFIG = {
+            
+        }
+    </script>
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% if show_footer %}
+        {% include './footer.html' %}
+    {% endif %}
+</body>
+</html>

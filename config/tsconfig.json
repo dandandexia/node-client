@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "target": "es5",
+        "strictNullChecks": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "inlineSources": false,
+        "lib": ["es2015"]
+    },
+    "exclude": [
+        "node_modules",
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "outDir": "./build",
+        "jsx": "react",
+        "typeRoots": [
+            "node_modules/@types",
+            "typings"
+        ],
+        "paths": {
+            "*": ["*", "fe/src/*"],
+            "wap/*": ["fe/src/wap/*"],
+            "src/*": ["fe/src/*"],
+            "common": ["common"],
+            "@class/*": ["server/class/*"],
+            "@utils/*": ["server/utils/*"],
+            "@models/*": ["server/models/*"],
+            "@middleware/*": ["server/middleware/*"]
+        }
+    },
+    "exclude":[
+        "node_modules",
+    ]
+}

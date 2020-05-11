@@ -1,0 +1,22 @@
+
+{
+    "apps": [
+        {
+            "name":"node",
+            "script":"server/server.ts",
+            "instances": 2,
+            "exec_mode": "cluster",
+            "watch": false,
+            "cwd": "/data/www/node",
+            "exec_interpreter": "ts-node",
+            "log_date_format":"YYYY-MM-DD HH:mm Z",
+            "out_file":"/data/applogs/node/node.log",
+            "error_file": "/data/applogs/node/err.log",
+            "autorestart": true,
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}
+  

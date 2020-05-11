@@ -1,0 +1,193 @@
+/* ==========================================================================
+normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
+========================================================================== */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/* ==========================================================================
+    基础样式
+    ========================================================================== */
+.clearfix:after{
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
+    content:''
+}
+.clearfix{
+    zoom:1
+}
+body {
+    /* 默认 PingFang Sc Light*/
+    font-family: "SFProDisplay-Light", "SFUIDisplay-Light", "Roboto-Light", "Helvetica Neue", Helvetica, Arial, 'PingFangSC-Light', 'PingFang SC', 'NotoSansCJKsc-Light', 'Source Han Sans CN', 'Microsoft YaHei', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+    color: #666;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    min-width: 1005px;
+}
+a {
+    cursor: pointer;
+}
+a,a:visited {
+    color:#43B4F5;
+    text-decoration: none;
+}
+a:hover {
+    color: #2894FB;
+}
+input, button {
+    outline: 0;
+}
+button {
+    border:none;
+    padding:0;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+ol,ul, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+ol,ul {
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: inherit;
+}
+em {
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 966017 */
+    src: url('//at.alicdn.com/t/font_966017_p23vb2khf97.eot');
+    src: url('//at.alicdn.com/t/font_966017_p23vb2khf97.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_966017_p23vb2khf97.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_966017_p23vb2khf97.woff') format('woff'),
+    url('//at.alicdn.com/t/font_966017_p23vb2khf97.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_966017_p23vb2khf97.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.page_container {
+    position: relative;
+    width: 100%;
+    min-width: 1300px;
+    margin: auto;
+}
+.g_container {
+    margin: 0 auto;
+    width: 1180px;
+}
+::-moz-input-placeholder {
+    color: #C7C7C7;
+}
+::-webkit-input-placeholder {
+    color: #C7C7C7;
+}
+.g_left {
+    float: left;
+}
+.g_right {
+    float: right;
+}
+.g_hide {
+    display: none;
+}
+
+/* 按钮样式 */
+.g_btn {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+}
+.g_btn--middle {
+    width: 313px;
+    height: 68px;
+    line-height: 68px;
+    font-size: 24px;
+    border-radius: 34px	;
+    -webkit-border-radius: 34px	;
+    -moz-border-radius: 34px	;
+    -ms-border-radius: 34px	;
+    -o-border-radius: 34px	;
+}
+.g_btn--small {
+    width: 234px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 18px;
+    border-radius: 28px	;
+    -webkit-border-radius: 28px	;
+    -moz-border-radius: 28px	;
+    -ms-border-radius: 28px	;
+    -o-border-radius: 28px	;
+}
+.g_btn--blue {
+    color: #fff!important;
+    background: #5ABCE9;
+}
+.g_btn--blue:hover {
+    background: #3BACDF;
+}
+.g_btn--yellow {
+    color: #fff!important;
+    background: #FCB13E;
+}
+/* header */
+.g_header {
+    width: 100%;
+    position: relative;
+    height: 90px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.03);
+}
+.header_fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.03);
+}
+.header_logo {
+    width: 118px;
+    height: 47px;
+    margin-top: 21px;
+}
+.header_banner {
+    overflow: hidden;
+}
+.header_banner li {
+    float: left;
+    width: 121px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+    color: #556677;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+.header_banner li a {
+    display: block;
+    color: #556677;
+}
+.header_banner li.cur a, .header_banner li:hover a{
+    color: #50B8E8;
+}

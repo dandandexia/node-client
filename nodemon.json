@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "server",
+        "common"
+    ], 
+    "ext": "ts html js",
+    "ignore": [
+        "src/**/*.spec.ts"
+    ],
+    "exec": "ts-node"
+}
