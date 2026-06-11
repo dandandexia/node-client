@@ -29,7 +29,7 @@
         "@types/node": "^10.12.2",
         "Blob": "^0.10.0",
         "ali-oss": "^6.1.1",
-        "axios": "^0.19.0",
+        "axios": "^1.6.3",
         "browserslist": "^4.7.0",
         "caniuse-lite": "^1.0.30000997",
         "compression": "^1.7.3",
